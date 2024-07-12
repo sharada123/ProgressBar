@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;    
+    transition: 0.4s;
+    overflow: hidden;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+:root{
+    --red:rgb(204, 70, 70);
+    
+}
+h1{
+    font-family: monospace;
+    margin: 30px;
+    font-weight: 600;
+    color: rgb(201, 198, 198);
+}
+.wrapper{
+    width: 400px;
+    height: 400px;
+    box-shadow: 3px 3px 47px 39px gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(209, 68, 68),rgb(219, 188, 11),rgb(130, 160, 245),20deg, #eee3e3 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circular-progress::before{
+    content: "";
+    width: 330px;
+    height: 330px;
+    background-color:#fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-txt{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--red);
+}
